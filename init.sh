@@ -17,3 +17,10 @@ sudo chmod 777 /var/www/ -R
 sudo a2enmod rewrite
 sudo sed -i 's/AllowOverride\ None/AllowOverride\ All/' /etc/apache2/sites-available/default
 sudo /etc/init.d/apache2 restart
+
+" Setting up Mediterranean theme and faenza icons"
+sudo add-apt-repository ppa:noobslab/themes
+sudo add-apt-repository ppa:tiheum/equinox
+sudo apt-get update
+sudo apt-get install mediterranean-theme
+sudo apt-get install faenza-icon-theme
