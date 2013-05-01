@@ -17,7 +17,3 @@ sudo chmod 777 /var/www/ -R
 sudo a2enmod rewrite
 sudo sed -i 's/AllowOverride\ None/AllowOverride\ All/' /etc/apache2/sites-available/default
 sudo /etc/init.d/apache2 restart
-
-" Configure of Vim "
-git clone https://github.com/n3xu5/.vim.git ~/.vim
-mv ~/.vim/.vimrc ~
